@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+    <div class="wrap-1">
+       <img alt="index" src="img/index-bg-2.svg" class="index-bg-7">
+       <img alt="index" src="img/index-bg-1.svg" class="index-bg-1">
+        <div class="container-md">
+           <div class="main-content">
+            <h2>Test Your Knowledge</h2>
+            <h3>Front-End Quiz</h3>
+            <div class="next-page" data-href="quiz.html">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M335.083,271.083
+			L228.416,377.749c-4.16,4.16-9.621,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251c-8.341-8.341-8.341-21.824,0-30.165
+			L289.835,256l-91.584-91.584c-8.341-8.341-8.341-21.824,0-30.165s21.824-8.341,30.165,0l106.667,106.667
+			C343.424,249.259,343.424,262.741,335.083,271.083z"/>
+	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g>
+</g>
+</svg>
+               </div>
+           </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+<script>
+    $(document).ready(function(){
+        
+        $(".next-page").click(function(){
+            window.location= $(this).attr("data-href");
+            return false;
+        })
+        
+    })
+</script>
+        
+</body>
+</html>
