@@ -3,6 +3,8 @@ body{ background: #ADA996;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+*::selection{ background-color: transparent;}
 body:focus{ outline: none;}
 body:focus-within{ outline: none;}
 
@@ -64,7 +66,7 @@ background: linear-gradient(to right, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, F
     100%{ transform: scale(1);}
 }
 
-#progress{ display: inline-block; position: absolute; bottom: 10%; padding: 5px; left: 35%;}
+#progress{ display: inine-block; position: absolute; bottom: 10%; padding: 5px; left: 50%; transform: translateX(-50%);}
 .prog{ width: 20px; height: 20px; border: 1px solid #000; display: inline-block; border-radius: 50%; margin: 0 5px;}
 
 #scoreContainer{ height: 300px; width: 800px; border-radius: 5px; box-shadow: 0 5px 15px; position: relative; display: none; background-color: #fff; margin: auto; margin-top: 30px; animation: fade-out .5s linear;}
@@ -99,7 +101,7 @@ background: linear-gradient(to right, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, F
     .wrap-2 #quizbox{ width: 900px;}
     #question{ width: 600px; height: 125px; position: absolute; left: 20%; top: 30%;}
     #choices{ position: absolute; left: 20%; top: 45%; padding: 5px; margin: 5px;}
-    #progress{ display: inline-block; position: absolute; bottom: 5%; padding: 5px; left: 34%;}
+    #progress{ display: inline-block; position: absolute; bottom: 5%; padding: 5px;}
 }
 
 @media screen and (max-width:980px){
@@ -111,7 +113,7 @@ background: linear-gradient(to right, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, F
     .wrap-2 #quizbox{ width: 790px; margin-left: -50px; margin-top: 140px;}
     #question{ width: 550px; height: 125px; position: absolute; left: 12%; top: 38%;}
     #choices{ position: absolute; left: 14%; top: 52%; padding: 5px; margin: 5px;}
-    #progress{ display: inline-block; position: absolute; bottom: 2%; padding: 5px; left: 30%;}
+    #progress{ display: inline-block; position: absolute; bottom: 2%; padding: 5px; left: 50%; transform: translateX(-50%);}
     #scoreContainer{ height: 300px; width: 700px; margin-top: 30px;}
 }
 
@@ -128,7 +130,7 @@ background: linear-gradient(to right, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, F
     #question{ width: 550px; height: 125px; position: absolute; left: 15%; top: 34%;}
     #question p{ font-weight: 600;}    
     #choices{ position: absolute; left: 18%; top: 46%; padding: 5px; margin: 5px;}
-    #progress{ display: inline-block; position: absolute; bottom: 5%; padding: 5px; left: 28%;}
+    #progress{ display: inline-block; position: absolute; bottom: 5%; padding: 5px;}
     #scoreContainer{ height: 400px; width: 600px; margin-top: 30px;}
     #scoreContainer img{ position: absolute; top: 50%; left: 46%;}
     #scoreContainer p{ position: absolute; top: 68%; left: 36%; font-size: 20px;}
@@ -161,7 +163,7 @@ background: linear-gradient(to right, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, F
     #question{ width: 100%; height: 125px; position: absolute; left: 0%; top: 34%;}
     #question p{ padding: 15px; margin: 0; font-size: 16px; font-weight: 500;}
     #choices{ position: absolute; left: 2%; top: 48%; padding: 5px; margin: 5px;}
-    #progress{ display: inline-block; position: absolute; bottom: 8%; padding: 5px; left: 9%;}
+    #progress{ display: inline-block; position: absolute; bottom: 2%; padding: 5px 10px; width: 100%;}
     #timer{ position: absolute; height: 100px; width: 200px; top: 10%; text-align: center; right: 0;}
     #timg{ position: absolute; top: -40%; right: 30%; animation: spring .5s linear infinite;}
     #counter{ font-size: 30px; font-weight: bold; position: absolute; top: -16%; right: 10%; animation: none;}
@@ -186,7 +188,7 @@ background: linear-gradient(to right, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, F
     #qimg img{ height: 140px;}
     #bgtimeGauge{ margin-top: 50px;}
     #timeGauge{ margin-top: 33px;}
-    #progress{ display: inline-block; position: absolute; bottom: 8%; padding: 5px; left: 5%;}
+    #progress{ display: inline-block; position: absolute; bottom: 2%; padding: 5px 15px;}
     #scoreContainer{ height: 400px; width: 320px; margin-top: 30px; margin-left: -30px;}
     #scoreContainer .home-page{ top: 10%; left: 38%;}
     #scoreContainer img{ top: 50%; left: 41%;}
