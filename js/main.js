@@ -96,6 +96,90 @@ let questions = [
       choiceB : ".nav-stacked",
       choiceC : ".nav Nav-pills",
       correct : "A"
+  },
+    
+    {
+      question : "11). Which of these tags would display the largest text?",
+      imgSrc : "img/quiz.svg",
+      choiceA : "p",
+      choiceB : "h6",
+      choiceC : "h2",
+      correct : "C"
+  }, 
+    {
+      question : "12). What is the purpose of <!DOCTYPE html>?",
+      imgSrc : "img/quiz.svg",
+      choiceA : "Instructs the browser where to look for your CSS files",
+      choiceB : "Allows programmers to link to files in-line",
+      choiceC : "Tells the web browser what language to expect",
+      correct : "C"
+  },
+    {
+      question : "13). Where in your HTML document should you include the code <!DOCTYPE html>?",
+      imgSrc : "img/quiz.svg",
+      choiceA : "body section",
+      choiceB : "first line",
+      choiceC : "doesn't matter",
+      correct : "B"
+  },
+    {
+      question : "14). You should save HTML files with which file extension?",
+      imgSrc : "img/quiz.svg",
+      choiceA : ".html",
+      choiceB : ".htm",
+      choiceC : ".index",
+      correct : "A"
+  },
+    {
+      question : "15). Within which tag does the information for a web page appear?",
+      imgSrc : "img/quiz.svg",
+      choiceA : "body",
+      choiceB : "head",
+      choiceC : "html",
+      correct : "A"
+  },
+    {
+      question : "16). Which tag makes bold text?",
+      imgSrc : "img/quiz.svg",
+      choiceA : "bold",
+      choiceB : "strong",
+      choiceC : "both of the above",
+      correct : "B"
+  },
+    {
+      question : "17). Which of the following is the correct way to add an attribute?",
+      imgSrc : "img/quiz.svg",
+      choiceA : "src",
+      choiceB : "id",
+      choiceC : "id='title'",
+      correct : "C"
+  },
+    
+    {
+      question : "18). What symbol should you use to target an id in css?",
+      imgSrc : "img/quiz.svg",
+      choiceA : ".",
+      choiceB : "id",
+      choiceC : "#",
+      correct : "C"
+  },
+    
+    {
+      question : "19). What symbol should you use to target a class name in css?",
+      imgSrc : "img/quiz.svg",
+      choiceA : "#",
+      choiceB : ".",
+      choiceC : "class",
+      correct : "B"
+  },
+    
+    {
+      question : "20). How do you change the font color with CSS?",
+      imgSrc : "img/quiz.svg",
+      choiceA : "color: green;",
+      choiceB : "font-color: green;",
+      choiceC : "change-font-color: green;",
+      correct : "A"
   }
 ];
 
@@ -104,7 +188,7 @@ const lastQuestion = questions.length-1;
 let runningQuestion = 0;
 
 let count = 0;
-const questionTime = 10; //10s
+const questionTime = 30; //10s
 const gaugeWidth = 150; //150px
 const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
